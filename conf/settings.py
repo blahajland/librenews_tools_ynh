@@ -28,7 +28,7 @@ assert DATA_DIR_PATH.is_dir(), f'Directory not exists: {DATA_DIR_PATH}'
 INSTALL_DIR_PATH = __Path('__INSTALL_DIR__')  # /var/www/$app/
 assert INSTALL_DIR_PATH.is_dir(), f'Directory not exists: {INSTALL_DIR_PATH}'
 
-LOG_FILE_PATH = __Path('__LOG_FILE__')  # /var/log/$app/django_example_ynh.log
+LOG_FILE_PATH = __Path('__LOG_FILE__')  # /var/log/$app/librenews_tools_ynh.log
 assert LOG_FILE_PATH.is_file(), f'File not exists: {LOG_FILE_PATH}'
 
 PATH_URL = '__PATH__'

@@ -12,18 +12,18 @@ root@yunohost:~# /home/yunohost.app/django_example/manage.py sendtestemail --adm
 
 How to debug a django YunoHost app, take a look into:
 
-* https://github.com/YunoHost-Apps/django_example_ynh#developer-info
+* https://github.com/blahajland/librenews_tools_ynh#developer-info
 
 ## local test
 
-For quicker developing of django_example_ynh in the context of YunoHost app,
+For quicker developing of librenews_tools_ynh in the context of YunoHost app,
 it's possible to run the Django developer server with the settings
 and urls made for YunoHost installation.
 
 e.g.:
 ```bash
 ~$ git clone https://github.com/YunoHost-Apps/django_example.git
-~$ cd django_example_ynh/
+~$ cd librenews_tools_ynh/
 ~/django_example$ ./dev-cli.py --help
 ```
 
@@ -43,7 +43,7 @@ Usage: ./dev-cli.py [OPTIONS] COMMAND [ARGS]...
 │ diffsettings                Run "diffsettings" manage command against a "local_test" YunoHost    │
 │                             installation.                                                        │
 │ fix-code-style              Fix code style of all your_cool_package source code files via darker │
-│ install                     Run pip-sync and install 'django_example_ynh' via pip as editable.   │
+│ install                     Run pip-sync and install 'librenews_tools_ynh' via pip as editable.   │
 │ local-test                  Build a "local_test" YunoHost installation and start the Django dev. │
 │                             server against it.                                                   │
 │ mypy                        Run Mypy (configured in pyproject.toml)                              │

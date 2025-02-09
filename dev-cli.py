@@ -57,7 +57,7 @@ DEP_HASH_PATH = VENV_PATH / '.dep_hash'
 
 # script file defined in pyproject.toml as [console_scripts]
 # (Under Windows: ".exe" not added!)
-PROJECT_SHELL_SCRIPT = BIN_PATH / 'django_example_ynh_dev'
+PROJECT_SHELL_SCRIPT = BIN_PATH / 'librenews_tools_ynh_dev'
 
 
 def get_dep_hash():

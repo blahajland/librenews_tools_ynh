@@ -34,7 +34,7 @@ bx-py-utils==101 \
 cli-base-utilities==0.11.0 \
     --hash=sha256:2c674f3af4898f97d101f6687fb45e85a4b996b93fb9a155a29b4daaf302dc43 \
     --hash=sha256:fc503f8df7e19653167ebd12551718aa0c114114b959f177be2092eab1ce1b11
-    # via django_example_ynh (pyproject.toml)
+    # via librenews_tools_ynh (pyproject.toml)
 click==8.1.7 \
     --hash=sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28 \
     --hash=sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de
@@ -63,7 +63,7 @@ django-axes==6.5.1 \
 django-example==0.2.0 \
     --hash=sha256:2bcaeed97868e8be5c4d7d6a745b054f6983c931d5cefb763e6ff25807f15793 \
     --hash=sha256:469beaa9e4f3e5d0ee98f043ee533f0f01fafef128391ac9f4ca9d9f35290da0
-    # via django_example_ynh (pyproject.toml)
+    # via librenews_tools_ynh (pyproject.toml)
 django-redis==5.4.0 \
     --hash=sha256:6a02abaa34b0fea8bf9b707d2c363ab6adc7409950b2db93602e6cb292818c42 \
     --hash=sha256:ebc88df7da810732e2af9987f7f426c96204bf89319df4c6da6ca9a2942edd5b
@@ -75,7 +75,7 @@ django-tools==0.56.2 \
 django-yunohost-integration[ynh]==0.8.1 \
     --hash=sha256:236bc1e427162182ca5efbf773bbad642b20741e7bf42308134887f4b7c27ced \
     --hash=sha256:ced40614ba57edb0d80482e6f4f63c614115184695d2f2aaa1aa02b2485b0529
-    # via django_example_ynh (pyproject.toml)
+    # via librenews_tools_ynh (pyproject.toml)
 gunicorn==23.0.0 \
     --hash=sha256:ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d \
     --hash=sha256:f014447a0101dc57e294f6c18ca6b40227a4c90e9bdb586042628030cba004ec

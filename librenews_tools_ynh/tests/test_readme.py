@@ -5,8 +5,8 @@ from django_yunohost_integration.path_utils import get_project_root
 from manageprojects.test_utils.click_cli_utils import invoke_click
 from manageprojects.tests.base import BaseTestCase
 
-from django_example_ynh.cli.dev import cli
-from django_example_ynh.constants import CLI_EPILOG
+from librenews_tools_ynh.cli.dev import cli
+from librenews_tools_ynh.constants import CLI_EPILOG
 
 
 def assert_cli_help_in_readme(text_block: str, marker: str, readme_path: Path):

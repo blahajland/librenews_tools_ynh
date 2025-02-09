@@ -43,7 +43,7 @@ ram.runtime = "50M" # **estimate** minimum ram requirement. e.g. 50M, 400M, 1G, 
     # this is a generic question - ask strings are automatically handled by Yunohost's core
     # setting $path and template variable __PATH__
     type = "path"
-    default = "/django_example_ynh"
+    default = "/librenews_tools_ynh"
 
     [install.admin]
     # this is a generic question - ask strings are automatically handled by Yunohost's core

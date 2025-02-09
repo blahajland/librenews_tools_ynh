@@ -1,11 +1,11 @@
 [project]
-name = "django_example_ynh"
+name = "librenews_tools_ynh"
 dynamic = ["version"]
-description = "Demo YunoHost Application to demonstrate the integration of a Django project under YunoHost."
+description = "A collection of tools for managing LibreNews"
 license = {text = "GPL-3.0-or-later"}
 readme = "README.md"
 authors = [
-    {name = 'Jens Diemer', email = 'django_example_ynh@jensdiemer.de'}
+    {name = 'eryn', email = 'eryn@blahaj.land'}
 ]
 requires-python = ">=3.11"
 dependencies = [
@@ -51,12 +51,12 @@ dev = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/YunoHost-Apps/django_example_ynh"
-Source = "https://github.com/YunoHost-Apps/django_example_ynh"
+Documentation = "https://github.com/blahajland/librenews_tools_ynh"
+Source = "https://github.com/blahajland/librenews_tools_ynh"
 
 [project.scripts]
-django_example_ynh_app = "django_example_ynh.__main__:main"
-django_example_ynh_dev = "django_example_ynh.cli.dev:main"
+librenews_tools_ynh_app = "librenews_tools_ynh.__main__:main"
+librenews_tools_ynh_dev = "librenews_tools_ynh.cli.dev:main"
 
 
 [ynh-integration]
@@ -69,10 +69,10 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["django_example_ynh*"]
+include = ["librenews_tools_ynh*"]
 
 [tool.setuptools.dynamic]
-version = {attr = "django_example_ynh.__version__"}
+version = {attr = "librenews_tools_ynh.__version__"}
 
 
 [tool.cli_base.pip_audit]
@@ -105,7 +105,7 @@ log_level = "INFO"
 atomic=true
 profile='black'
 skip_glob=[".*", "*/htmlcov/*","*/migrations/*","*/local_test/*"]
-known_first_party=['django_example', 'django_example_ynh']
+known_first_party=['django_example', 'librenews_tools_ynh']
 line_length=119
 lines_after_imports=2
 
@@ -180,15 +180,15 @@ applied_migrations = [
 project_name = "Django Example"
 full_name = "Jens Diemer"
 github_username = "jedie"
-author_email = "django_example_ynh@jensdiemer.de"
+author_email = "librenews_tools_ynh@jensdiemer.de"
 upstream_pkg_name = "django_example"
 upstream_url = "https://github.com/jedie/django-example"
-ynh_app_pkg_name = "django_example_ynh"
-ynh_app_url = "https://github.com/YunoHost-Apps/django_example_ynh"
+ynh_app_pkg_name = "librenews_tools_ynh"
+ynh_app_url = "https://github.com/blahajland/librenews_tools_ynh"
 bug_tracker_url = "https://github.com/jedie/django-example/issues"
 upstream_version = "0.1.0rc0"
 ynh_version = "1"
 package_description = "Demo YunoHost Application to demonstrate the integration of a Django project under YunoHost."
 license = "GPL-3.0-or-later"
 _template = "https://github.com/jedie/cookiecutter_templates/"
-_output_dir = "~/repos_ynh/django_example_ynh"
+_output_dir = "~/repos_ynh/librenews_tools_ynh"

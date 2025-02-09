@@ -13,7 +13,7 @@ from typeguard import install_import_hook
 
 
 # Check type annotations via typeguard in all tests:
-install_import_hook(packages=('django_example_ynh',))
+install_import_hook(packages=('librenews_tools_ynh',))
 
 
 def pre_configure_tests() -> None:
@@ -33,7 +33,7 @@ def pre_configure_tests() -> None:
 
 def setup_ynh_tests() -> None:
     # Import after "install_import_hook" to check type annotations:
-    import django_example_ynh
+    import librenews_tools_ynh
 
     os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
@@ -58,7 +58,7 @@ def setup_ynh_tests() -> None:
 
     django.setup()
 
-    os.chdir(Path(django_example_ynh.__file__).parent)
+    os.chdir(Path(librenews_tools_ynh.__file__).parent)
 
 
 def load_tests(loader, tests, pattern):

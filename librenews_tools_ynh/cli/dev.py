@@ -24,9 +24,9 @@ from rich.console import Console
 from rich.traceback import install as rich_traceback_install
 from rich_click import RichGroup
 
-import django_example_ynh
-from django_example_ynh import constants
-from django_example_ynh.tests import setup_ynh_tests
+import librenews_tools_ynh
+from librenews_tools_ynh import constants
+from librenews_tools_ynh.tests import setup_ynh_tests
 
 
 logger = logging.getLogger(__name__)
@@ -76,7 +76,7 @@ def mypy(verbosity: int):
 @cli.command()
 def install():
     """
-    Run pip-sync and install 'django_example_ynh' via pip as editable.
+    Run pip-sync and install 'librenews_tools_ynh' via pip as editable.
     """
     verbose_check_call('pip-sync', get_project_root() / 'requirements.dev.txt')
     verbose_check_call('pip', 'install', '--no-deps', '-e', '.')
@@ -150,9 +150,9 @@ def publish():
         assert err.code == 0, f'Exit code is not 0: {err.code}'
 
     publish_package(
-        module=django_example_ynh,
+        module=librenews_tools_ynh,
         package_path=get_project_root(),
-        distribution_name='django_example_ynh',
+        distribution_name='librenews_tools_ynh',
     )
 
 
@@ -276,7 +276,7 @@ def diffsettings():
 
 
 def main():
-    print_version(django_example_ynh)
+    print_version(librenews_tools_ynh)
 
     if len(sys.argv) >= 2:
         # Check if we can just pass a command call to origin CLI:
